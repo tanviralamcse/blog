@@ -2,7 +2,8 @@ import React, { Component, Fragment } from 'react';
 import '../../assets/css/bootstrap.min.css';
 import '../../assets/css/custom.css';
 import Container from 'react-bootstrap/Container';
-import {Row, Col, Button} from 'react-bootstrap';
+import { Row, Col, Form, Button } from 'react-bootstrap';
+
 class TopBanner extends Component {
     render() {
         return (
@@ -14,13 +15,18 @@ class TopBanner extends Component {
                                 <Col className='text-center'>
                                     <h1 className='topTitle'>CELEBRITY GOSSIPS</h1>
                                     <h4 className='topSubTitle'>Biography and News</h4>
-                                    <Button variant="primary">Visit Top Ten Lists</Button>
+                                    <Form className='form'>
+                                    <input type="text" id="form-search" placeholder="Search Celebrity Name"/>
+                                        <Button variant="primary" type="submit" className='buttons'>
+                                            Search
+                                        </Button>
+                                    </Form>
                                 </Col>
                             </Row>
                         </Container>
                     </div>
-                </Container>
-            </Fragment>
+                </Container >
+            </Fragment >
         );
     }
 }
