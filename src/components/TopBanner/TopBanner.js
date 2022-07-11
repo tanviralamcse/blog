@@ -14,9 +14,9 @@ class TopBanner extends Component {
                             <Row>
                                 <Col className='text-center'>
                                     <h1 className='topTitle'>CELEBRITY GOSSIPS</h1>
-                                    <h4 className='topSubTitle'>Biography and News</h4>
+                                    <h4 className='topSubTitle'>Biography and News</h4><br/>
                                     <Form className='form'>
-                                    <input type="text" id="form-search" placeholder="Search Celebrity Name"/>
+                                        <input type="text" id="form-search" placeholder="Search Celebrity Name" />
                                         <Button variant="primary" type="submit" className='buttons'>
                                             Search
                                         </Button>
@@ -25,8 +25,8 @@ class TopBanner extends Component {
                             </Row>
                         </Container>
                     </div>
-                </Container >
-            </Fragment >
+                </Container>
+            </Fragment>
         );
     }
 }
